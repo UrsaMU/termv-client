@@ -1,0 +1,37 @@
+
+> sprawl-client@0.1.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /Users/kumakun/github/sprawl-client
+
+ ✓ src/protocol/speech.test.ts (4 tests) 2ms
+ ✓ src/protocol/frames.test.ts (6 tests) 3ms
+ ✓ src/protocol/format.test.ts (6 tests) 3ms
+ ✓ src/live/transport.test.ts (3 tests) 2ms
+ ✓ src/protocol/look.test.ts (2 tests) 2ms
+ ✓ src/protocol/feed.test.ts (3 tests) 2ms
+ ✓ src/protocol/chargen.test.ts (6 tests) 3ms
+
+ Test Files  7 passed (7)
+      Tests  30 passed (30)
+   Start at  17:14:56
+   Duration  277ms (transform 218ms, setup 0ms, collect 362ms, tests 15ms, environment 1ms, prepare 325ms)
+
+
+> sprawl-client@0.1.0 typecheck
+> tsc --noEmit
+
+
+> sprawl-client@0.1.0 build
+> tsc -b && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 77 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.73 kB │ gzip:  0.39 kB
+dist/assets/index-ChS0aS5H.css    7.95 kB │ gzip:  1.99 kB
+dist/assets/index-B7glj-2M.js   302.99 kB │ gzip: 97.44 kB
+✓ built in 541ms
